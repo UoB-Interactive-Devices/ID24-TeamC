@@ -12,3 +12,4 @@ Ideas:
 
 Inspo:
 -That thesis with the squeezy bracelet for navigation from hci
+-Pre-existing audio description software
