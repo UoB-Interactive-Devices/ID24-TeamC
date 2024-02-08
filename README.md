@@ -60,4 +60,4 @@ numpages = {4},
 keywords = {integral photography, integral imaging, 3D television},
 location = {Seoul, South Korea},
 series = {VRCAI '10}
-}
+- Museum and art gallery sticker albums and guides
