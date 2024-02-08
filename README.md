@@ -42,3 +42,22 @@
 - That thesis with the squeezy bracelet for navigation from hci
 - Pre-existing audio description software
 - Horrible Histories Gory games
+- Dong Hoon Jung, Jieun Kim, Jeong Gu Lee, Hoi Jeong Yang, and Hokyoung Ryu. 2019. Lessons Learned from an Auditory-vibrotactile Sensory Experience in the Museum. In Proceedings of the 2019 ACM International Conference on Interactive Surfaces and Spaces (ISS '19). Association for Computing Machinery, New York, NY, USA, 373–378. https://doi.org/10.1145/3343055.3360754
+- Kyle D. Johnson and J. C. Diaz. 2012. Interactive content delivery system for a museum. In Proceedings of the 50th Annual Southeast Regional Conference (ACM-SE '12). Association for Computing Machinery, New York, NY, USA, 337–338. https://doi.org/10.1145/2184512.2184593
+- @inproceedings{10.1145/1900179.1900255,
+author = {Okui, Makoto and Okano, Fumio},
+title = {Integral photography display for digital museum exhibit},
+year = {2010},
+isbn = {9781450304597},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1900179.1900255},
+doi = {10.1145/1900179.1900255},
+abstract = {We have conducted research into integral photography as a method of adapting 3D video to digital showcase. Since this method can recreate many depth cues, it possesses the possibility of fully recreating a lifelike impression of exhibits. We created a prototype that reproduced still images and were able to obtain full parallax reproduced images.},
+booktitle = {Proceedings of the 9th ACM SIGGRAPH Conference on Virtual-Reality Continuum and Its Applications in Industry},
+pages = {365–368},
+numpages = {4},
+keywords = {integral photography, integral imaging, 3D television},
+location = {Seoul, South Korea},
+series = {VRCAI '10}
+}
