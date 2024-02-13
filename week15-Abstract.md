@@ -43,7 +43,7 @@ Through this study, it aims to allow the user to visually realise the impact of 
   simulated painting by turbulence (air simulation)
   
 
-### Prototype
+### Prototype (Sketch)
 <p align="center">
   <img src="https://github.com/UoB-Interactive-Devices/ID24-TeamC/assets/30760730/2bb63b7e-6779-4fed-9c07-13a0d220e28d" width="400" />
   <img src="https://github.com/UoB-Interactive-Devices/ID24-TeamC/assets/30760730/d5ed4515-1740-4013-b819-f12a8a50ce68" width="500" />
