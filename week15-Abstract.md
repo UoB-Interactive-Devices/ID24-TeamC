@@ -10,6 +10,12 @@ Simulate the impact of the artist's life events on the work for learning art his
 
 ### Abstract
 
+We introduce 'What-if Canvas', simulating the impact of the artist's life events on the work to deepen users' understanding of the art work. 
+For art appreciation, a comprehensive understanding often necessitates background knowledge about the artwork and its artist. 
+However, in a museum, visitors are usually given only one-way supplemental information by text or audio. 
+This research proposes an interactive system that allows users to explore pivotal events in an artist's life and hypothetically remove them, leading to a visualization of how these changes might have altered the artist's work.
+Through this study, it aims to allow the user to visually realise the impact of the life event, enhancing their insight into the artwork and the background information of the artwork.
+
 ### Related Work
 - [AI Painting: An Aesthetic Painting Generation System](https://dl.acm.org/doi/10.1145/3240508.3241386) (MM'18)
   
