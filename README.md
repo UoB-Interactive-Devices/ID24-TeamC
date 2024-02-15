@@ -44,6 +44,7 @@
 3. Press the button when people finished the certain gallery.
 
 ### Group: A mummy act as the monitor to control four Canopic jars
+![alt text](https://museumofmythology.com/Egypt/canoptic%20jars/canoptic%20jars/canoptic%20jars-1.jpg)
 1. _Background_: In ancient times, a mummy, once a powerful pharaoh, is tasked with guarding four Canopic jars, each embodying the preserved organs for the afterlife. 
 2. _Interactions_:
 
