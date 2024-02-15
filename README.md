@@ -38,6 +38,25 @@
 
     _Motivation_: Museums bring together people with one thing in common: they have time and some interest in art. However, there are many psychological barriers to new social interactions. So when some people who secretly want to talk to each other are looking at the same artwork, the artwork poses open questions about the artwork. We investigate how facilitating new interactions affects the museum experience and subsequent interactions.
 
+### Xiaoxiao :
+1. Build a 3D Model Map featuring galleries across different floors with a small toy moving around.
+2. Navigate through each gallery and upon completion, press a button to guide a virtual avatar to the next exhibition.
+3. Press the button when people finished the certain gallery.
+
+### Group: A mummy act as the monitor to control four Canopic jars
+1. _Background_: In ancient times, a mummy, once a powerful pharaoh, is tasked with guarding four Canopic jars, each embodying the preserved organs for the afterlife. 
+2. _Interactions_:
+
+| Actions  | Methods/Outcomes |
+| ------------- | ------------- |
+| Light  | Light sensor  |
+| Squeeze| Sound ”Do not squeeze me wwwwww”  |
+| Smile  | A curl line of lights   |
+| Smell  | ?  |
+| Unscrew the head  | The sound of the lid popping off a soda bottle  |
+
+3. _Motivations_: It's designed to be a multi-time and attractive game, inspiring both children and adults acquire more knowledge of ancient Egypt. With no clear instructions on how to play with it, let people to investigate each button/organ's functionality.
+
 ## Inspo:
 - That thesis with the squeezy bracelet for navigation from hci
 - Pre-existing audio description software
