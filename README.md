@@ -57,6 +57,10 @@
 | Unscrew the head  | The sound of the lid popping off a soda bottle  |
 
 3. _Motivations_: It's designed to be a multi-time and attractive game, inspiring both children and adults acquire more knowledge of ancient Egypt. With no clear instructions on how to play with it, let people to investigate each button/organ's functionality.
+   
+##bold: Investigation question: Interactive mummy: How do we balance hedonia(happiness and flow) with realism when trying to  use technology to get users to engage with darker parts of world history?
+Novelty: We could use atypical materials.E.g. Clay in place of wires and bandage/gauze fabric buttons. If we want to use AI we could 1. have an auto-turn off for scent 2.have an ai that adapts in the intensity of certain experiences such as light and sensation intensity(less novel. Might need to encorporate deep learning)
+3.Invert a new haptic sensation for touching the jars and focus solely on comparing it to pre-existing sensations End Lauren rant
 
 ## Inspo:
 - That thesis with the squeezy bracelet for navigation from hci
