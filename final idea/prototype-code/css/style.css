@@ -1,0 +1,41 @@
+.painting-container {
+    position: relative;
+    width: 800px;
+}
+
+.painting-container img {
+    width: 100%;
+    height: auto;
+}
+
+.marker {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.info {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    display: none;
+}
+
+.marker:hover + .info {
+    display: block;
+}
+
+#marker1 {
+    top: 300px;
+    left: 300px;
+}
+
+
+#info1 {
+    top: 100px;
+    left: 150px;
+}
