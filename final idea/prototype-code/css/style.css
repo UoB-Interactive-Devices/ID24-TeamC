@@ -4,6 +4,7 @@
     right: 10px;
     padding: 10px 20px; 
     font-size: 1.2em;
+    border: none;
 }
 
 .painting-container {
@@ -44,13 +45,24 @@
 
 #marker1 {
     top: 300px;
-    left: 550px;
+    left: 600px;
 }
 
 #marker2 {
     top: 380px;
     left: 300px;
 }
+
+#marker3 {
+    top: 200px;
+    right: 300px;
+}
+
+#marker4 {
+    top: 250px;
+    left: 400px;
+}
+
 
 #info1 {
     top: 200px;
@@ -60,5 +72,16 @@
 
 #info2 {
     top: 500px;
+    left: 200px;
+}
+
+
+#info3 {
+    top: 200px;
+    right: 200px;
+}
+
+#info4 {
+    top: 30px;
     left: 200px;
 }
