@@ -1,11 +1,24 @@
+#toggleButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px; 
+    font-size: 1.2em;
+}
+
 .painting-container {
+    text-align: center;
     position: relative;
-    width: 800px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* position: relative; */
+    /* width: 100%; */
 }
 
 .painting-container img {
-    width: 100%;
+    max-width: 80%;
     height: auto;
+    display: inline-block;
 }
 
 .marker {
@@ -31,11 +44,21 @@
 
 #marker1 {
     top: 300px;
+    left: 550px;
+}
+
+#marker2 {
+    top: 380px;
     left: 300px;
 }
 
-
 #info1 {
-    top: 100px;
-    left: 150px;
+    top: 200px;
+    left: 200px;
+}
+
+
+#info2 {
+    top: 500px;
+    left: 200px;
 }

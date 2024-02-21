@@ -9,3 +9,14 @@ document.querySelectorAll('.marker').forEach(marker => {
         document.getElementById(infoId).style.display = 'none';
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.getElementById('toggleButton');
+    toggleButton.addEventListener('click', function () {
+        if (toggleButton.textContent === 'fact') {
+            toggleButton.textContent = 'story';
+        } else {
+            toggleButton.textContent = 'fact';
+        }
+    });
+});
