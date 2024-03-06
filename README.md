@@ -30,3 +30,14 @@ LET'S GET TO THE POINT
 https://github.com/UoB-Interactive-Devices/ID24-TeamC/assets/30760730/4e7979fe-0279-4ae2-bf53-05b7df0a2686
 
 ![IMG_4889](https://github.com/UoB-Interactive-Devices/ID24-TeamC/assets/30760730/792b1673-d2fd-4184-8956-d2863ab39d0b)
+
+## Bullet Points of Intro
+- (Context) : Passive learning experience in the museum (i.e. Reading description besides painting) may cause users to lose the chance to learn art history 
+
+- (Motivation) : We want to know the info of the art more intuitively. Describing an object in the painting by words is complex (i.e. A lady at the right corner) 
+
+- (Related work) :  to be info more interactive, many works have done, including audio guide, AR, ... but not “without devices” context 
+
+- (Methods) : pointing to the art and info comes out through audio or projector 
+
+- (New World) : enhance art education experiences/ outside museum, using info visualization with pointing interaction    
