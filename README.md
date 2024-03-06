@@ -22,7 +22,8 @@
 
 ## Our Idea 
 
-Art painting pointing/hand gesture -> info comes up
+Art painting pointing/hand gesture -> info comes up 
+LET'S GET TO THE POINT
 
 ### Sketch
 
