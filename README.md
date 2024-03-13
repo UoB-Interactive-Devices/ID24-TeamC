@@ -22,6 +22,14 @@
 - [Brain Storming / Sketch](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/Sketches)
 - [Final Idea](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/final%20idea)
 
+## Schedule (has to do next few weeks)
+
+Prototype
+Final study plan
+Final prototype
+Final study and analysis
+Fianl paper
+
 
 ## Our Idea 
 
