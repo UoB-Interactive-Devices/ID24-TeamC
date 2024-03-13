@@ -24,11 +24,11 @@
 
 ## Schedule (has to do next few weeks)
 
-Prototype
-Final study plan
-Final prototype
-Final study and analysis
-Fianl paper
+- Prototype
+- Final study plan
+- Final prototype
+- Final study and analysis
+- Fianl paper
 
 
 ## Our Idea 
