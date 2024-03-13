@@ -25,7 +25,7 @@
 
 ## Our Idea 
 
-Art painting pointing/hand gesture -> info comes up 
+Art painting pointing/hand gesture -> info comes up (Name, Year, What they do, did)
 LET'S GET TO THE POINT
 
 ### Sketch
