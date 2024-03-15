@@ -1,0 +1,12 @@
+image,marker_id,marker_top,marker_left,info_id,info_top,info_left,info_content
+image/school-of-athens.jpg,marker1,12748px,6428px,info1,12748px,3000px,"Information 1: The young man peaking out at the viewer, is none other than Raphael himself. "
+image/school-of-athens.jpg,marker2,4406px,6428px,info2,4406px,3000px,"Information 2: Hypatia, the first woman documented to have made a contribution to mathematics, astronomy and philosophy. "
+image/school-of-athens.jpg,marker3,9378px,5792px,info3,9378px,3000px,"Information 3: Alexander the Great, King of Macedonia in the 4th century B.C. and eventual ruler of the land stretching from Greece to India and Egypt. "
+image/school-of-athens.jpg,marker4,3511px,6994px,info4,3511px,3000px,"Information 4: Pythagoras, an ancient Ionian Greek philosopher, polymath and the eponymous founder of Pythagoreanism. "
+image/school-of-athens.jpg,marker5,5113px,5415px,info5,5113px,3000px,"Information 5: Socrates(the rightest), among the crowd surrounding Socrates are his students, including the general Alcibiades and Aeschines of Sphettus. "
+image/school-of-athens.jpg,marker6,6292px,7489px,info6,6292px,3000px,"Information 6: Heraclitus, a self-taught pioneer of wisdom. He was a melancholy character and did not enjoy the company of others,"
+image/school-of-athens.jpg,marker7,11287px,7654px,info7,11287px,3000px,"Information 7: Euclid, an ancient Greek mathematician active as a geometer and logician. "
+image/school-of-athens.jpg,marker8,7234px,5674px,info8,7234px,3000px,"Information 8: Plato on the left and Aristotle, his student, on the right. Both figures bound copies of their books in their left hands, while gesturing with their right. "
+painting_audio/background.mp3,marker9,7163px,3601px,info9,,,Audio 1: background.mp3
+painting_audio/plato.mp4,marker10,7163px,5368px,info10,,,Audio 2: plato.mp3
+painting_audio/alexander.mp5,marker11,8813px,7536px,info10,,,Audio 3: alexander.mp3
