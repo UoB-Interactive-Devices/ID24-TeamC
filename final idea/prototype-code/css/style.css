@@ -43,6 +43,11 @@
     display: block;
 }
 
+.image-container {
+    position: relative;
+}
+
+/* 
 #marker1 {
     top: 300px;
     left: 600px;
@@ -84,4 +89,18 @@
 #info4 {
     top: 30px;
     left: 200px;
+} */
+
+
+#currentImage {
+    width: 1400px;
+    height: auto;
 }
+
+#gallery {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
