@@ -36,6 +36,13 @@ Art painting pointing/hand gesture -> info comes up (Name, Year, What they do, d
 
 LET'S GET TO THE POINT
 
+## Demo
+
+
+https://github.com/UoB-Interactive-Devices/ID24-TeamC/assets/30760730/dfbf07c6-1607-4c03-822c-37d36f459469
+
+
+
 ## Sketch
 
 https://github.com/UoB-Interactive-Devices/ID24-TeamC/assets/30760730/4e7979fe-0279-4ae2-bf53-05b7df0a2686
