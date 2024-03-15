@@ -21,15 +21,14 @@
 - [Tamagocchi](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/Tamagotchi)
 - [Brain Storming / Sketch](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/Sketches)
 - [Final Idea](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/final%20idea)
+- [Execution Timeline](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/Execution%20Timeline)
 
-## Schedule (has to do next few weeks)
-
+## Schedule (to do in the next few weeks)
 - Prototype
 - Final study plan
 - Final prototype
 - Final study and analysis
 - Final paper
-
 
 ## Our Idea 
 
@@ -44,12 +43,12 @@ https://github.com/UoB-Interactive-Devices/ID24-TeamC/assets/30760730/4e7979fe-0
 ![IMG_4889](https://github.com/UoB-Interactive-Devices/ID24-TeamC/assets/30760730/792b1673-d2fd-4184-8956-d2863ab39d0b)
 
 ## Bullet Points of Intro
-- (Context) : Passive learning experience in the museum (i.e. Reading description besides painting) may cause users to lose the chance to learn art history 
+- (Context): Passive learning experience in the museum (i.e. Reading descriptions beside painting) may cause users to lose the chance to learn art history 
 
-- (Motivation) : We want to know the info of the art more intuitively. Describing an object in the painting by words is complex (i.e. A lady at the right corner) 
+- (Motivation): We want to know the info of the art more intuitively. Describing an object in the painting by words is complex (i.e. A lady in the right corner) 
 
-- (Related work) :  to be info more interactive, many works have done, including audio guide, AR, ... but not “without devices” context 
+- (Related work):  to be info more interactive, many works have been done, including audio guide, AR, ... but not “without devices” context 
 
-- (Methods) : pointing to the art and info comes out through audio or projector 
+- (Methods): pointing to the art and info comes out through audio or projector 
 
-- (New World) : enhance art education experiences/ outside museum, using info visualization with pointing interaction    
+- (New World): enhance art education experiences/ outside museum, using info visualization with pointing interaction    
