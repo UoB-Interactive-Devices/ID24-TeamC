@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     var currentImage = document.getElementById('currentImage');
     var currentIndex = 0;
-    var images = ["lady-jane-grey.jpg"]; 
+    var images = ["school-of-athens.jpg","lady-jane-grey.jpg"]; 
 
     document.getElementById('prevButton').addEventListener('click', function() {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
@@ -38,28 +38,73 @@ document.addEventListener('DOMContentLoaded', function() {
             gallery.removeChild(el);
         });
 
+
+        var originalWidth = 9933;
+        var originalHeight = 14043;
+    
+     
+        // var displayWidth = 1400;
+        // var scale = displayWidth / originalWidth;
+    
         data.forEach(function(row) {
+
+            var markTopPercent = row.marker_top / originalHeight * 100;
+            var markLeftPercent = row.marker_left / originalWidth * 100;
+
+            var infoTopPercent = row.info_top / originalHeight
+            var infoLeftPercent = row.info_left / originalWidth
+
             var marker = document.createElement('div');
             marker.className = 'marker';
-            marker.style = `position: absolute; top: ${row.marker_top}; left: ${row.marker_left}; width: 20px; height: 20px; background-color: red; border-radius: 50%; cursor: pointer;`;
+            marker.style = `position: absolute; top: ${markTopPercent}%; left: ${markLeftPercent}%; width: 20px; height: 20px; background-color: red; border-radius: 50%; cursor: pointer;`;
 
             var info = document.createElement('div');
             info.className = 'info';
             info.innerHTML = row.info_content;
-            info.style = `position: absolute; top: ${row.info_top}; left: ${row.info_left}; background-color: white; border: 1px solid black; padding: 10px; display: none;`;
+            info.style = `position: absolute; top: ${infoTopPercent}; left: ${infoLeftPercent}; background-color: white; border: 1px solid black; padding: 10px; display: none;`;
 
             marker.onmouseover = function() {
                 info.style.display = 'block';
             };
-    
+
             marker.onmouseout = function() {
                 info.style.display = 'none';
             };
-    
+
             gallery.appendChild(marker);
             gallery.appendChild(info);
         });
     }
+
+    // function generateHTML(data) {
+    //     var gallery = document.getElementById('gallery');
+    //     var existingMarkers = gallery.querySelectorAll('.marker, .info');
+    //     existingMarkers.forEach(function(el) {
+    //         gallery.removeChild(el);
+    //     });
+
+    //     data.forEach(function(row) {
+    //         var marker = document.createElement('div');
+    //         marker.className = 'marker';
+    //         marker.style = `position: absolute; top: ${row.marker_top} %; left: ${row.marker_left}; width: 20px; height: 20px; background-color: red; border-radius: 50%; cursor: pointer;`;
+
+    //         var info = document.createElement('div');
+    //         info.className = 'info';
+    //         info.innerHTML = row.info_content;
+    //         info.style = `position: absolute; top: ${row.info_top}; left: ${row.info_left}; background-color: white; border: 1px solid black; padding: 10px; display: none;`;
+
+    //         marker.onmouseover = function() {
+    //             info.style.display = 'block';
+    //         };
+
+    //         marker.onmouseout = function() {
+    //             info.style.display = 'none';
+    //         };
+
+    //         gallery.appendChild(marker);
+    //         gallery.appendChild(info);
+    //     });
+    // }
 
     updateImage();
 });
