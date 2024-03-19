@@ -1,4 +1,4 @@
-# ID24-TeamC
+# ID24-TeamC (Pointfo)
 
 ## TAs ##
 - Primary TA: Ellen Weir
