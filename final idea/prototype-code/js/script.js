@@ -48,11 +48,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
         data.forEach(function(row) {
 
-            var markTopPercent = row.marker_top / originalHeight * 100;
-            var markLeftPercent = row.marker_left / originalWidth * 100;
+            var markTopPercent = parseFloat(row.marker_top) / originalHeight * 100;
+            var markLeftPercent = parseFloat(row.marker_left) / originalWidth * 100;
 
-            var infoTopPercent = row.info_top / originalHeight
-            var infoLeftPercent = row.info_left / originalWidth
+            var infoTopPercent = parseFloat(row.info_top) / originalHeight * 100;
+            var infoLeftPercent = parseFloat(row.info_left) / originalWidth * 100;
 
             var marker = document.createElement('div');
             marker.className = 'marker';
