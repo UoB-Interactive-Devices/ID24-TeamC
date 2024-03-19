@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateImage();
     });
 
+    // show image using CSV data
     function updateImage() {
         var imageName = images[currentIndex];
         currentImage.src = './image/' + imageName;
@@ -86,13 +87,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // hide image by pressing space key
+    // hide the image by pressing space key
     document.addEventListener('keydown', function(event) {
         if (event.code === 'Space') {
             if (currentImage.style.display === 'none') {
                 currentImage.style.display = 'block';
+                document.getElementById('prevButton').style.display = 'block';
+                document.getElementById('nextButton').style.display = 'block';
             } else {
                 currentImage.style.display = 'none';
+                document.getElementById('prevButton').style.display = 'none';
+                document.getElementById('nextButton').style.display = 'none';
             }
         }
     });
