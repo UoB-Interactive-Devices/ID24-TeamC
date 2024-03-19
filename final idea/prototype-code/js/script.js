@@ -86,5 +86,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // hide image by pressing space key
+    document.addEventListener('keydown', function(event) {
+        if (event.code === 'Space') {
+            if (currentImage.style.display === 'none') {
+                currentImage.style.display = 'block';
+            } else {
+                currentImage.style.display = 'none';
+            }
+        }
+    });
+
     updateImage();
 });
