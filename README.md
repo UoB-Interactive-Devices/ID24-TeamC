@@ -20,7 +20,7 @@
 - **To Do List**: [To do List](https://uob-my.sharepoint.com/:w:/r/personal/kz21093_bristol_ac_uk/Documents/To%20do%20list.docx?d=w8fe93566dce647bda418b47aaac3c5bf&csf=1&web=1&e=p0ibdk](https://uob-my.sharepoint.com/:w:/g/personal/kz21093_bristol_ac_uk/EWY16Y_m3L1HpBi0eqrDxb8BY0CsnOuzJymm1lCgeHuD2g?e=IwRoPj)](https://uob-my.sharepoint.com/:w:/g/personal/kz21093_bristol_ac_uk/EWY16Y_m3L1HpBi0eqrDxb8BouRX4gFlvF5MZyto9zEptg?e=2eaJUe)](https://uob-my.sharepoint.com/:w:/g/personal/kz21093_bristol_ac_uk/EWY16Y_m3L1HpBi0eqrDxb8BouRX4gFlvF5MZyto9zEptg?email=ms20317%40bristol.ac.uk&e=z2fUSQ))
 
 ## Progress
-- [Tamagocchi](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/Tamagotchi)
+- [Tamagotchi](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/Tamagotchi)
 - [Brain Storming / Sketch](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/Sketches)
 - [Final Idea](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/final%20idea)
 - [Execution Timeline](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/Execution%20Timeline)
