@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var currentIndex = 0;
     var images = ["school-of-athens.jpg","lady-jane-grey.jpg"]; 
 
+    // for slideshow function (Just in case)
     document.getElementById('prevButton').addEventListener('click', function() {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         updateImage();
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loadCSVData(imageName.split('.')[0]);
     }
 
+    // load a target csv from ./csv/
     function loadCSVData(imageName) {
         Papa.parse(`csv/${imageName}.csv`, {
             download: true,
@@ -28,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 generateHTML(csvData);
             }
         });
-        // TODO: audio
     }
 
+    // generate HTML elements from csv data
     function generateHTML(data) {
         var gallery = document.getElementById('gallery');
         var existingMarkers = gallery.querySelectorAll('.marker, .info');
@@ -38,14 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
             gallery.removeChild(el);
         });
 
-
+        // A0 poster pixel
         var originalWidth = 9933;
         var originalHeight = 14043;
-    
-     
-        // var displayWidth = 1400;
-        // var scale = displayWidth / originalWidth;
-    
+
+
         data.forEach(function(row) {
 
             var markTopPercent = parseFloat(row.marker_top) / originalHeight * 100;
@@ -54,57 +53,38 @@ document.addEventListener('DOMContentLoaded', function() {
             var infoTopPercent = parseFloat(row.info_top) / originalHeight * 100;
             var infoLeftPercent = parseFloat(row.info_left) / originalWidth * 100;
 
+            // marker
             var marker = document.createElement('div');
             marker.className = 'marker';
-            marker.style = `position: absolute; top: ${markTopPercent}%; left: ${markLeftPercent}%; width: 20px; height: 20px; background-color: red; border-radius: 50%; cursor: pointer;`;
-
+            marker.style = `position: absolute; top: ${markTopPercent}%; left: ${markLeftPercent}%; width: 20px; height: 20px; background-color: red; border-radius: 50%; cursor: pointer; z-index: 1;`;
+            
+            // info
             var info = document.createElement('div');
             info.className = 'info';
             info.innerHTML = row.info_content;
-            info.style = `position: absolute; top: ${infoTopPercent}; left: ${infoLeftPercent}; background-color: white; border: 1px solid black; padding: 10px; display: none;`;
+            info.style = `position: absolute; top: ${infoTopPercent}; left: ${infoLeftPercent}; background-color: white; border: 1px solid black; padding: 10px; display: none; z-index: 2;`;
 
+            // audio
+            var audio = document.createElement('audio');
+            audio.src = './audio/' + row.audio;
+            audio.preload = 'auto';
+
+            // pointer
             marker.onmouseover = function() {
                 info.style.display = 'block';
+                audio.play();
             };
 
             marker.onmouseout = function() {
                 info.style.display = 'none';
+                // audio.pause();
             };
 
             gallery.appendChild(marker);
             gallery.appendChild(info);
+            gallery.appendChild(audio); 
         });
     }
-
-    // function generateHTML(data) {
-    //     var gallery = document.getElementById('gallery');
-    //     var existingMarkers = gallery.querySelectorAll('.marker, .info');
-    //     existingMarkers.forEach(function(el) {
-    //         gallery.removeChild(el);
-    //     });
-
-    //     data.forEach(function(row) {
-    //         var marker = document.createElement('div');
-    //         marker.className = 'marker';
-    //         marker.style = `position: absolute; top: ${row.marker_top} %; left: ${row.marker_left}; width: 20px; height: 20px; background-color: red; border-radius: 50%; cursor: pointer;`;
-
-    //         var info = document.createElement('div');
-    //         info.className = 'info';
-    //         info.innerHTML = row.info_content;
-    //         info.style = `position: absolute; top: ${row.info_top}; left: ${row.info_left}; background-color: white; border: 1px solid black; padding: 10px; display: none;`;
-
-    //         marker.onmouseover = function() {
-    //             info.style.display = 'block';
-    //         };
-
-    //         marker.onmouseout = function() {
-    //             info.style.display = 'none';
-    //         };
-
-    //         gallery.appendChild(marker);
-    //         gallery.appendChild(info);
-    //     });
-    // }
 
     updateImage();
 });
