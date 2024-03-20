@@ -67,36 +67,80 @@ document.addEventListener('DOMContentLoaded', function() {
             var infoLeftPercent = parseInt(parseInt(row.info_left) / originalWidth * imageWidth)*2;
 
             console.log(markTopPercent, markLeftPercent);
-            // marker
-            var marker = document.createElement('div');
-            marker.className = 'marker';
-            marker.style = `position: absolute; top: ${markTopPercent}px; left: ${markLeftPercent}px; width: ${markWidthPercent}px; height: ${markHeightPercent}px; background-color: transparent; border: 2px solid red; z-index: 1;`;
 
-            // info
-            var info = document.createElement('div');
-            info.className = 'info';
-            info.innerHTML = row.info_content;
-            info.style = `position: absolute; top: ${infoTopPercent}px; left: ${infoLeftPercent}px; background-color: white; border: 1px solid black; padding: 10px; display: none; z-index: 2; font-size:25px`;
+            if (row.type === 'text') {
 
-            // audio
-            var audio = document.createElement('audio');
-            audio.src = './audio/' + row.audio;
-            audio.preload = 'auto';
+                // marker
+                var marker = document.createElement('div');
+                marker.className = 'marker';
+                marker.style.position = 'absolute';
+                marker.style.top = markTopPercent + 'px';
+                marker.style.left = markLeftPercent + 'px';
+                marker.style.width = markWidthPercent + 'px';
+                marker.style.height = markHeightPercent + 'px';
+                marker.style.backgroundColor = 'transparent';
+                marker.style.border = '2px solid red';
+                marker.style.zIndex = '1';
+                gallery.appendChild(marker);
 
-            // pointer
-            marker.onmouseover = function() {
-                info.style.display = 'block';
-                audio.play();
-            };
-
-            marker.onmouseout = function() {
+                // info
+                var info = document.createElement('div');
+                info.className = 'info';
+                info.style.position = 'absolute';
+                info.style.top = infoTopPercent + 'px';
+                info.style.left = infoLeftPercent + 'px'; 
+                info.style.backgroundColor = 'white';
+                info.style.border = '1px solid black';
+                info.style.padding = '10px';
                 info.style.display = 'none';
-                // audio.pause();
-            };
+                info.style.zIndex = '2';
+                info.style.fontSize = '25px'; 
+                info.innerHTML = row.info_content;
+                gallery.appendChild(info);
 
-            gallery.appendChild(marker);
-            gallery.appendChild(info);
-            gallery.appendChild(audio); 
+                // audio
+                var audio = document.createElement('audio');
+                audio.src = './audio/' + row.audio;
+                audio.preload = 'auto';
+                gallery.appendChild(audio);
+
+
+                // pointer
+                marker.onmouseover = function() {
+                    info.style.display = 'block';
+                    audio.play();
+                };
+
+                marker.onmouseout = function() {
+                    info.style.display = 'none';
+                    // audio.pause();
+                };
+            
+            }else{
+                var audioMarker = document.createElement('div');
+                audioMarker.className = 'audio-marker';
+                audioMarker.style.position = 'absolute';
+                audioMarker.style.top = markTopPercent/2 + 'px';
+                audioMarker.style.left = markLeftPercent/2 + 'px';
+                audioMarker.style.width = '20px'; 
+                audioMarker.style.height = '20px'; 
+                audioMarker.style.borderRadius = '50%'; 
+                audioMarker.style.backgroundColor = 'blue'; 
+                audioMarker.style.cursor = 'pointer'; 
+                audioMarker.style.zIndex = '1';
+                gallery.appendChild(audioMarker);
+
+                console.log(markTopPercent, markLeftPercent);
+
+                // Play audio on audio marker hover
+                audioMarker.addEventListener('mouseover', function() {
+                    var audio = document.createElement('audio');
+                    audio.src = './audio/' + row.audio;
+                    audio.preload = 'auto';
+                    audio.play();
+                });
+            }
+
         });
     }
 
