@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         data.forEach(function(row) {
 
             // TODO: figure out why this ratio calculation is wrong here
-            // the float at the end is the magic number
+            // the number (around 2) at the end is the magic number
             var markTopPercent = parseInt(row.marker_top) / originalHeight * imageHeight*2 + imageOffsetTop;
             var markLeftPercent = parseInt(row.marker_left) / originalWidth * imageWidth*2 + imageOffsetLeft;
             var markWidthPercent = parseInt(row.marker_width) / originalWidth * imageWidth*2;
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 info.style.position = 'absolute';
                 info.style.top = infoTopPercent + 'px';
                 info.style.left = infoLeftPercent + 'px'; 
-                info.style.backgroundColor = 'white';
+                info.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; 
                 info.style.border = '1px solid black';
                 info.style.padding = '10px';
                 info.style.display = 'none';
@@ -116,7 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     // audio.pause();
                 };
             
-            }else{
+                // for audio only
+            }else if(row.type == 'audio'){
                 var audioMarker = document.createElement('div');
                 audioMarker.className = 'audio-marker';
                 audioMarker.style.position = 'absolute';
@@ -132,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 console.log(markTopPercent, markLeftPercent);
 
-                // Play audio on audio marker hover
+
                 audioMarker.addEventListener('mouseover', function() {
                     var audio = document.createElement('audio');
                     audio.src = './audio/' + row.audio;
