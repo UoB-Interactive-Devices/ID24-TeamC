@@ -42,28 +42,41 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // A0 poster pixel
-        var originalWidth = 9933;
-        var originalHeight = 14043;
+        var originalWidth = 14043;
+        var originalHeight = 9933;
 
+        // current image pixel
+        var imageWidth = currentImage.width;
+        var imageHeight = currentImage.height;
+
+        var imageOffsetLeft = currentImage.offsetLeft;
+        var imageOffsetTop = currentImage.offsetTop;
+
+        console.log(imageWidth, imageHeight);
 
         data.forEach(function(row) {
 
-            var markTopPercent = parseFloat(row.marker_top) / originalHeight * 100;
-            var markLeftPercent = parseFloat(row.marker_left) / originalWidth * 100;
+            // TODO: figure out why this ratio calculation is wrong here
+            // the float at the end is the magic number
+            var markTopPercent = parseInt(row.marker_top) / originalHeight * imageHeight*2 + imageOffsetTop;
+            var markLeftPercent = parseInt(row.marker_left) / originalWidth * imageWidth*2 + imageOffsetLeft;
+            var markWidthPercent = parseInt(row.marker_width) / originalWidth * imageWidth*2;
+            var markHeightPercent = parseInt(row.marker_height) / originalHeight * imageHeight*2;
 
-            var infoTopPercent = parseFloat(row.info_top) / originalHeight * 100;
-            var infoLeftPercent = parseFloat(row.info_left) / originalWidth * 100;
+            var infoTopPercent = parseInt(parseInt(row.info_top) / originalHeight * imageHeight)*2;
+            var infoLeftPercent = parseInt(parseInt(row.info_left) / originalWidth * imageWidth)*2;
 
+            console.log(markTopPercent, markLeftPercent);
             // marker
             var marker = document.createElement('div');
             marker.className = 'marker';
-            marker.style = `position: absolute; top: ${markTopPercent}%; left: ${markLeftPercent}%; width: 20px; height: 20px; background-color: red; border-radius: 50%; cursor: pointer; z-index: 1;`;
-            
+            marker.style = `position: absolute; top: ${markTopPercent}px; left: ${markLeftPercent}px; width: ${markWidthPercent}px; height: ${markHeightPercent}px; background-color: transparent; border: 2px solid red; z-index: 1;`;
+
             // info
             var info = document.createElement('div');
             info.className = 'info';
             info.innerHTML = row.info_content;
-            info.style = `position: absolute; top: ${infoTopPercent}; left: ${infoLeftPercent}; background-color: white; border: 1px solid black; padding: 10px; display: none; z-index: 2;`;
+            info.style = `position: absolute; top: ${infoTopPercent}px; left: ${infoLeftPercent}px; background-color: white; border: 1px solid black; padding: 10px; display: none; z-index: 2; font-size:25px`;
 
             // audio
             var audio = document.createElement('audio');
