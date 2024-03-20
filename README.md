@@ -26,7 +26,7 @@
 - [Execution Timeline](https://github.com/UoB-Interactive-Devices/ID24-TeamC/tree/main/Execution%20Timeline)
 
 ## Schedule (to do in the next few weeks)
-- Prototype
+- Prototype (Well done)
 - Final study plan
 - Final prototype
 - Final study and analysis
