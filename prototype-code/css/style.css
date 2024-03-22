@@ -1,0 +1,60 @@
+#toggleButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px; 
+    font-size: 1.2em;
+    border: none;
+}
+
+.painting-container {
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 100vh;
+}
+
+.painting-container img {
+    max-width: 80%;
+    height: auto;
+    display: inline-block;
+}
+/* 
+.marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+} */
+
+/* .info {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    display: none;
+} */
+
+.marker:hover + .info {
+    display: block;
+}
+
+.image-container {
+    position: relative;
+}
+
+#currentImage {
+    width: auto;
+    height: 100vh;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: auto;
+    height: 100vh;
+}
+
